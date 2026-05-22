@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>ChemBros – Premium Cleaning Products | Port Elizabeth</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <a href="#home" class="nav-logo">
+    <img src="chembros-logo.png" alt="CHEMBROS">
+  </a>
+  <ul class="nav-links">
+    <li><a href="#products">Products</a></li>
+    <li><a href="#bulk">Bulk Orders</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="#contact" class="nav-cta">Get a Quote</a></li>
+  </ul>
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#products" onclick="toggleMenu()">Products</a>
+  <a href="#bulk" onclick="toggleMenu()">Bulk Orders</a>
+  <a href="#about" onclick="toggleMenu()">About</a>
+  <a href="#faq" onclick="toggleMenu()">FAQ</a>
+  <a href="#contact" onclick="toggleMenu()">Get a Quote</a>
+  <a href="https://wa.me/27677391209?text=Hi+ChemBros%2C+I%27d+like+to+place+an+order" target="_blank" style="color:#25d366;font-weight:700;">💬 WhatsApp Us</a>
+</div>
+
+<!-- HERO -->
+<section id="home">
+  <div class="hero-bg-pattern"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span class="dot" style="width:6px;height:6px;border-radius:50%;background:#76c442;display:inline-block;"></span>
+      Made in Port Elizabeth · Gqeberha
+    </div>
+    <h1 class="hero-title">
+      CLEAN<br/>
+      <span class="green">SMARTER.</span><br/>
+      <span class="blue">PAY LESS.</span>
+    </h1>
+    <p class="hero-sub">
+      Premium local reseller of cleaning products for households and businesses. Dishwashers, bleach, car care and more — available in small, medium and bulk volumes.
+    </p>
+    <div class="hero-btns">
+      <a href="#products" class="btn-primary">Shop Products</a>
+      <a href="https://wa.me/27677391209?text=Hi+ChemBros%2C+I%27d+like+to+place+an+order" target="_blank" class="btn-whatsapp">
+        💬 Order on WhatsApp
+      </a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-item">
+        <div class="stat-num">10+</div>
+        <div class="stat-label">Products</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">3</div>
+        <div class="stat-label">Volume Sizes</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">PE</div>
+        <div class="stat-label">Local Delivery</div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="hero-card">
+      <div class="hero-card-label">Best Seller</div>
+      <div class="hero-card-val">Dishwasher Liquid</div>
+      <div class="hero-card-sub">From R28 · 750ml</div>
+    </div>
+    <div class="hero-card">
+      <div class="hero-card-label">Bulk Value</div>
+      <div class="hero-card-val">25L Thick Bleach</div>
+      <div class="hero-card-sub">R490 · Business Deal</div>
+    </div>
+    <div class="hero-card">
+      <div class="hero-card-label">Car Care</div>
+      <div class="hero-card-val">Wax, Wash & Shampoo</div>
+      <div class="hero-card-sub">From R50 · 1L</div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="trust-item"><span class="dot"></span>Locally Manufactured</div>
+  <div class="trust-item"><span class="dot"></span>Fast PE Delivery</div>
+  <div class="trust-item"><span class="dot"></span>Bulk Orders Welcome</div>
+  <div class="trust-item"><span class="dot"></span>Return Bottle & Save R3</div>
+  <div class="trust-item"><span class="dot"></span>FNB EFT Accepted</div>
+</div>
+
+<!-- PRODUCTS -->
+<section id="products">
+  <div class="products-header">
+    <div class="section-label">Our Range</div>
+    <h2 class="section-title">PRODUCTS & PRICING</h2>
+    <p class="section-sub">Choose your size — household bottles or bulk supply. All products made locally in Port Elizabeth.</p>
+  </div>
+
+  <div class="volume-tabs">
+    <button class="tab-btn active" onclick="showTab('small')">Small Volume<br/><span style="font-size:0.7rem;opacity:0.7">500ml – 1L</span></button>
+    <button class="tab-btn" onclick="showTab('medium')">Medium Volume<br/><span style="font-size:0.7rem;opacity:0.7">5L</span></button>
+    <button class="tab-btn" onclick="showTab('bulk')">Bulk Volume<br/><span style="font-size:0.7rem;opacity:0.7">25L</span></button>
+  </div>
+
+  <!-- SMALL -->
+  <div class="tab-panel active" id="tab-small">
+    <div class="products-grid">
+      <div class="product-card">
+        <div class="product-icon">🍽️</div>
+        <div class="product-name">Dishwasher Liquid</div>
+        <div class="product-size">750ml</div>
+        <div class="product-price">R28 <span>/ bottle</span></div>
+        <a href="https://wa.me/27677391209?text=Hi+ChemBros%2C+I%27d+like+to+order+Dishwasher+Liquid+750ml" target="_blank" class="product-order-btn">Order via WhatsApp</a>
+      </div>
+      <div class="product-card">
+        <div class="product-icon">🧴</div>
+        <div class="product-name">Thick Bleach</div>
+        <div class="product-size">750ml · On Order</div>
+        <div class="product-price">R22 <span>/ bottle</span></div>
+        <a href="https://wa.me/27677391209?text=Hi+ChemBros%2C+I%27d+like+to+order+Thick+Bleach+750ml" target="_blank" class="product-order-btn">Order via WhatsApp</a>
+      </div>
+      <div class="product-card">
+        <div class="product-icon">🚗</div>
+        <div class="product-name">Car Wax, Wash & Shampoo</div>
+        <div class="product-size">1L</div>
+        <div class="product-price">R50 <span>/ bottle</span></div>
+        <a href="https://wa.me/27677391209?text=Hi+ChemBros%2C+I%27d+like+to+order+Car+Wax+Wash+1L" target="_blank" class="product-order-btn">Order via WhatsApp</a>
+      </div>
+      <div class="product-card">
+        <div class="product-icon">🍦</div>
+        <div class="product-name">Milkies</div>
+        <div class="product-size">500ml</div>
+        <div class="product-price">R60 <span>/ bottle</span></div>
+        <a href="https://wa.me/27677391209?text=Hi+ChemBros%2C+I%27d+like+to+order+Milkies+500ml" target="_blank" class="product-order-btn">Order via WhatsApp</a>
+      </div>
+      <div class="product-card">
+        <div class="product-icon">🛁</div>
+        <div class="product-name">Hand/Body Wash</div>
+        <div class="product-size">500ml</div>
+        <div class="product-price">R20 <span>/ bottle</span></div>
+        <a href="https://wa.me/27677391209?text=Hi+ChemBros%2C+I%27d+like+to+order+Hand+Body+Wash+500ml" target="_blank" class="product-order-btn">Order via WhatsApp</a>
+      </div>
+      <div class="product-card">
+        <div class="product-icon">🌲</div>
+        <div class="product-name">Pinegel</div>
+        <div class="product-size">1L</div>
+        <div class="product-price">R35 <span>/ bottle</span></div>
+        <a href="https://wa.me/27677391209?text=Hi+ChemBros%2C+I%27d+like+to+order+Pinegel+1L" target="_blank" class="product-order-btn">Order via WhatsApp</a>
+      </div>
+      <div class="product-card">
+        <div class="product-icon">🧹</div>
+        <div class="product-name">Handy Andy</div>
+        <div class="product-size">750ml</div>
+        <div class="product-price">R24 <span>/ bottle</span></div>
+        <a href="https://wa.me/27677391209?text=Hi+ChemBros%2C+I%27d+like+to+order+Handy+Andy+750ml" target="_blank" class="product-order-btn">Order via WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MEDIUM -->
+  <div class="tab-panel" id="tab-medium">
+    <div class="products-grid">
+      <div class="product-card">
+        <div class="product-icon">🍽️</div>
+        <div class="product-name">Dishwasher</div>
+        <div class="product-size">5L</div>
+        <div class="product-price">R90 <span>/ 5L</span></div>
+        <a href="https://wa.me/27677391209?text=Hi+ChemBros%2C+I%27d+like+to+order+Dishwasher+5L" target="_blank" class="product-order-btn">Order via WhatsApp</a>
+      </div>
+      <div class="product-card">
+        <div class="product-icon">🧴</div>
+        <div class="product-name">Thick Bleach</div>
+        <div class="product-size">5L</div>
+        <div class="product-price">R110 <span>/ 5L</span></div>
+        <a href="https://wa.me/27677391209?text=Hi+ChemBros%2C+I%27d+like+to+order+Thick+Bleach+5L" target="_blank" class="product-order-btn">Order via WhatsApp</a>
+      </div>
+      <div class="product-card">
+        <div class="product-icon">🚗</div>
+        <div class="product-name">Car Wax, Wash & Shampoo</div>
+        <div class="product-size">5L</div>
+        <div class="product-price">R110 <span>/ 5L</span></div>
+        <a href="https://wa.me/27677391209?text=Hi+ChemBros%2C+I%27d+like+to+order+Car+Wax+5L" target="_blank" class="product-order-btn">Order via WhatsApp</a>
+      </div>
+      <div class="product-card">
+        <div class="product-icon">🍦</div>
+        <div class="product-name">Milkies</div>
+        <div class="product-size">5L</div>
+        <div class="product-price">R350 <span>/ 5L</span></div>
+        <a href="https://wa.me/27677391209?text=Hi+ChemBros%2C+I%27d+like+to+order+Milkies+5L" target="_blank" class="product-order-btn">Order via WhatsApp</a>
+      </div>
+      <div class="product-card">
+        <div class="product-icon">🛁</div>
+        <div class="product-name">Hand/Body Wash</div>
+        <div class="product-size">5L</div>
+        <div class="product-price">R100 <span>/ 5L</span></div>
+        <a href="https://wa.me/27677391209?text=Hi+ChemBros%2C+I%27d+like+to+order+Hand+Body+Wash+5L" target="_blank" class="product-order-btn">Order via WhatsApp</a>
+      </div>
+      <div class="product-card">
+        <div class="product-icon">🌿</div>
+        <div class="product-name">Pinesan</div>
+        <div class="product-size">5L</div>
+        <div class="product-price">R95 <span>/ 5L</span></div>
+        <a href="https://wa.me/27677391209?text=Hi+ChemBros%2C+I%27d+like+to+order+Pinesan+5L" target="_blank" class="product-order-btn">Order via WhatsApp</a>
+      </div>
+      <div class="product-card">
+        <div class="product-icon">🌲</div>
+        <div class="product-name">Pinegel</div>
+        <div class="product-size">5L</div>
+        <div class="product-price">R135 <span>/ 5L</span></div>
+        <a href="https://wa.me/27677391209?text=Hi+ChemBros%2C+I%27d+like+to+order+Pinegel+5L" target="_blank" class="product-order-btn">Order via WhatsApp</a>
+      </div>
+      <div class="product-card">
+        <div class="product-icon">🧹</div>
+        <div class="product-name">Handy Andy</div>
+        <div class="product-size">5L</div>
+        <div class="product-price">R100 <span>/ 5L</span></div>
+        <a href="https://wa.me/27677391209?text=Hi+ChemBros%2C+I%27d+like+to+order+Handy+Andy+5L" target="_blank" class="product-order-btn">Order via WhatsApp</a>
+      </div>
+      <div class="product-card">
+        <div class="product-icon">✨</div>
+        <div class="product-name">Superkleen</div>
+        <div class="product-size">5L</div>
+        <div class="product-price">R95 <span>/ 5L</span></div>
+        <a href="https://wa.me/27677391209?text=Hi+ChemBros%2C+I%27d+like+to+order+Superkleen+5L" target="_blank" class="product-order-btn">Order via WhatsApp</a>
+      </div>
+      <div class="product-card">
+        <div class="product-icon">🪣</div>
+        <div class="product-name">Floor Polish</div>
+        <div class="product-size">5L</div>
+        <div class="product-price">R310 <span>/ 5L</span></div>
+        <a href="https://wa.me/27677391209?text=Hi+ChemBros%2C+I%27d+like+to+order+Floor+Polish+5L" target="_blank" class="product-order-btn">Order via WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- BULK 25L -->
+  <div class="tab-panel" id="tab-bulk">
+    <div class="products-grid">
+      <div class="product-card">
+        <div class="product-icon">🍽️</div>
+        <div class="product-name">Dishwasher</div>
+        <div class="product-size">25L · Bulk</div>
+        <div class="product-price">R380 <span>/ 25L</span></div>
+        <a href="https://wa.me/27677391209?text=Hi+ChemBros%2C+I%27d+like+to+order+Dishwasher+25L+bulk" target="_blank" class="product-order-btn">Order via WhatsApp</a>
+      </div>
+      <div class="product-card">
+        <div class="product-icon">🧴</div>
+        <div class="product-name">Thick Bleach</div>
+        <div class="product-size">25L · Bulk</div>
+        <div class="product-price">R490 <span>/ 25L</span></div>
+        <a href="https://wa.me/27677391209?text=Hi+ChemBros%2C+I%27d+like+to+order+Thick+Bleach+25L" target="_blank" class="product-order-btn">Order via WhatsApp</a>
+      </div>
+      <div class="product-card">
+        <div class="product-icon">🚗</div>
+        <div class="product-name">Car Wax, Wash & Shampoo</div>
+        <div class="product-size">25L · Bulk</div>
+        <div class="product-price">R470 <span>/ 25L</span></div>
+        <a href="https://wa.me/27677391209?text=Hi+ChemBros%2C+I%27d+like+to+order+Car+Wax+25L" target="_blank" class="product-order-btn">Order via WhatsApp</a>
+      </div>
+      <div class="product-card">
+        <div class="product-icon">🍦</div>
+        <div class="product-name">Milkies</div>
+        <div class="product-size">25L · Bulk</div>
+        <div class="product-price">R1 520 <span>/ 25L</span></div>
+        <a href="https://wa.me/27677391209?text=Hi+ChemBros%2C+I%27d+like+to+order+Milkies+25L" target="_blank" class="product-order-btn">Order via WhatsApp</a>
+      </div>
+      <div class="product-card">
+        <div class="product-icon">🛁</div>
+        <div class="product-name">Hand/Body Wash</div>
+        <div class="product-size">25L · Bulk</div>
+        <div class="product-price">R370 <span>/ 25L</span></div>
+        <a href="https://wa.me/27677391209?text=Hi+ChemBros%2C+I%27d+like+to+order+Hand+Body+Wash+25L" target="_blank" class="product-order-btn">Order via WhatsApp</a>
+      </div>
+      <div class="product-card">
+        <div class="product-icon">🌿</div>
+        <div class="product-name">Pinesan</div>
+        <div class="product-size">25L · Bulk</div>
+        <div class="product-price">R420 <span>/ 25L</span></div>
+        <a href="https://wa.me/27677391209?text=Hi+ChemBros%2C+I%27d+like+to+order+Pinesan+25L" target="_blank" class="product-order-btn">Order via WhatsApp</a>
+      </div>
+      <div class="product-card">
+        <div class="product-icon">🌲</div>
+        <div class="product-name">Pinegel</div>
+        <div class="product-size">25L · Bulk</div>
+        <div class="product-price">R600 <span>/ 25L</span></div>
+        <a href="https://wa.me/27677391209?text=Hi+ChemBros%2C+I%27d+like+to+order+Pinegel+25L" target="_blank" class="product-order-btn">Order via WhatsApp</a>
+      </div>
+      <div class="product-card">
+        <div class="product-icon">🧹</div>
+        <div class="product-name">Handy Andy</div>
+        <div class="product-size">25L · Bulk</div>
+        <div class="product-price">R380 <span>/ 25L</span></div>
+        <a href="https://wa.me/27677391209?text=Hi+ChemBros%2C+I%27d+like+to+order+Handy+Andy+25L" target="_blank" class="product-order-btn">Order via WhatsApp</a>
+      </div>
+      <div class="product-card">
+        <div class="product-icon">✨</div>
+        <div class="product-name">Superkleen</div>
+        <div class="product-size">25L · Bulk</div>
+        <div class="product-price">R380 <span>/ 25L</span></div>
+        <a href="https://wa.me/27677391209?text=Hi+ChemBros%2C+I%27d+like+to+order+Superkleen+25L" target="_blank" class="product-order-btn">Order via WhatsApp</a>
+      </div>
+      <div class="product-card">
+        <div class="product-icon">🪣</div>
+        <div class="product-name">Floor Polish</div>
+        <div class="product-size">25L · Bulk</div>
+        <div class="product-price">R1 450 <span>/ 25L</span></div>
+        <a href="https://wa.me/27677391209?text=Hi+ChemBros%2C+I%27d+like+to+order+Floor+Polish+25L" target="_blank" class="product-order-btn">Order via WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BULK ORDERS -->
+<section id="bulk">
+  <div class="bulk-grid">
+    <div>
+      <div class="section-label">B2B Supply</div>
+      <h2 class="section-title">BULK ORDERS FOR BUSINESS</h2>
+      <p class="section-sub" style="color:rgba(255,255,255,0.5)">We supply restaurants, cleaning companies, schools, guesthouses, retailers and more. Consistent quality, competitive bulk pricing, and local PE delivery.</p>
+
+      <div class="bulk-who">
+        <div class="who-item">
+          <span class="icon">🍽️</span>
+          <div>
+            <div class="who-item-name">Restaurants & Cafés</div>
+            <div class="who-item-desc">Dishwasher & degreaser in bulk</div>
+          </div>
+        </div>
+        <div class="who-item">
+          <span class="icon">🚿</span>
+          <div>
+            <div class="who-item-name">Cleaning Companies</div>
+            <div class="who-item-desc">Full product range, 25L supply</div>
+          </div>
+        </div>
+        <div class="who-item">
+          <span class="icon">🏫</span>
+          <div>
+            <div class="who-item-name">Schools & Offices</div>
+            <div class="who-item-desc">Bleach, floor polish, handy andy</div>
+          </div>
+        </div>
+        <div class="who-item">
+          <span class="icon">🚗</span>
+          <div>
+            <div class="who-item-name">Car Wash Businesses</div>
+            <div class="who-item-desc">Car wax, wash & shampoo in bulk</div>
+          </div>
+        </div>
+        <div class="who-item">
+          <span class="icon">🏨</span>
+          <div>
+            <div class="who-item-name">Guesthouses & B&Bs</div>
+            <div class="who-item-desc">Hand wash, bleach, floor care</div>
+          </div>
+        </div>
+        <div class="who-item">
+          <span class="icon">🏪</span>
+          <div>
+            <div class="who-item-name">Spaza & Retail Shops</div>
+            <div class="who-item-desc">Resell our range at your store</div>
+          </div>
+        </div>
+      </div>
+
+      <a href="https://wa.me/27677391209?text=Hi+ChemBros%2C+I%27m+interested+in+bulk+orders+for+my+business" target="_blank" class="btn-whatsapp" style="display:inline-flex;">
+        💬 WhatsApp for Bulk Quote
+      </a>
+    </div>
+
+    <div class="bulk-form">
+      <h3>REQUEST A BULK QUOTE</h3>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Your Name</label>
+          <input type="text" placeholder="Full name" id="bf-name"/>
+        </div>
+        <div class="form-group">
+          <label>Phone Number</label>
+          <input type="tel" placeholder="e.g. 067 739 1209" id="bf-phone"/>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Business Name</label>
+        <input type="text" placeholder="Your business / organisation" id="bf-biz"/>
+      </div>
+      <div class="form-group">
+        <label>Products Needed</label>
+        <select id="bf-product">
+          <option value="">Select a product...</option>
+          <option>Dishwasher</option>
+          <option>Thick Bleach</option>
+          <option>Car Wax, Wash & Shampoo</option>
+          <option>Milkies</option>
+          <option>Hand/Body Wash</option>
+          <option>Pinesan</option>
+          <option>Pinegel</option>
+          <option>Handy Andy</option>
+          <option>Superkleen</option>
+          <option>Floor Polish</option>
+          <option>Multiple products</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Additional Notes</label>
+        <textarea placeholder="Quantity needed, delivery area, any questions..." id="bf-msg"></textarea>
+      </div>
+      <button class="submit-btn" onclick="submitBulkForm()">Send Quote Request →</button>
+      <div class="success-msg" id="bulk-success">✅ Thanks! We'll be in touch within 24 hours.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-grid">
+    <div>
+      <div class="section-label">Our Story</div>
+      <h2 class="section-title">MADE IN PORT ELIZABETH</h2>
+      <p class="section-sub">ChemBros is a locally owned cleaning products business based in Gqeberha. We manufacture and supply high-quality household and industrial cleaning solutions at prices that make sense for South African families and businesses.</p>
+      <div class="about-features">
+        <div class="feature-item">
+          <div class="feature-num">01</div>
+          <div>
+            <div class="feature-title">Locally Made</div>
+            <div class="feature-desc">Every product is manufactured right here in Port Elizabeth. Buying ChemBros means supporting local business and local jobs.</div>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-num">02</div>
+          <div>
+            <div class="feature-title">Affordable Without Compromise</div>
+            <div class="feature-desc">Our prices are competitive because we cut out the middleman. You get great quality cleaning products at prices that genuinely save you money.</div>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-num">03</div>
+          <div>
+            <div class="feature-title">Flexible Volumes</div>
+            <div class="feature-desc">From 500ml bottles for your home to 25L drums for your business — we have the right size for every need.</div>
+          </div>
+        </div>
+      </div>
+      <div class="about-bottle-policy">
+        ♻️ &nbsp; <strong>Return Bottle Policy:</strong> &nbsp; Bring back your empty small-volume bottles and save R3 on your next order.
+      </div>
+    </div>
+    <div class="about-visual">
+      <div class="about-values">
+        <div class="value-row">
+          <span class="value-icon">🏭</span>
+          <div>
+            <div class="value-title">Local Manufacturing</div>
+            <div class="value-desc">Proudly made in Gqeberha, Eastern Cape</div>
+          </div>
+        </div>
+        <div class="value-row">
+          <span class="value-icon">💰</span>
+          <div>
+            <div class="value-title">Honest Pricing</div>
+            <div class="value-desc">No hidden fees — what you see is what you pay</div>
+          </div>
+        </div>
+        <div class="value-row">
+          <span class="value-icon">🚚</span>
+          <div>
+            <div class="value-title">PE Local Delivery</div>
+            <div class="value-desc">Fast delivery across Port Elizabeth</div>
+          </div>
+        </div>
+        <div class="value-row">
+          <span class="value-icon">💬</span>
+          <div>
+            <div class="value-title">WhatsApp First</div>
+            <div class="value-desc">Order quickly and easily via WhatsApp</div>
+          </div>
+        </div>
+        <div class="value-row">
+          <span class="value-icon">♻️</span>
+          <div>
+            <div class="value-title">Bottle Return Scheme</div>
+            <div class="value-desc">Eco-friendly: return & save R3 per bottle</div>
+          </div>
+        </div>
+      </div>
+      <img src="chembros-logo.png" alt="" class="about-logo-big" aria-hidden="true">
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div style="text-align:center; margin-bottom:2.5rem;">
+    <div class="section-label">Need to Know</div>
+    <h2 class="section-title">FREQUENTLY ASKED QUESTIONS</h2>
+  </div>
+  <div class="faq-grid">
+    <div class="faq-item" onclick="toggleFaq(this)">
+      <div class="faq-q">Do you deliver outside Port Elizabeth? <span class="faq-toggle">+</span></div>
+      <div class="faq-a">Our primary delivery area is Port Elizabeth / Gqeberha. For orders outside PE, please contact us via WhatsApp at 067 739 1209 and we'll discuss options and courier arrangements.</div>
+    </div>
+    <div class="faq-item" onclick="toggleFaq(this)">
+      <div class="faq-q">Can I get bulk / wholesale pricing? <span class="faq-toggle">+</span></div>
+      <div class="faq-a">Yes! We offer 5L and 25L volumes at significantly lower per-litre rates than our small bottles. Check the Bulk Volume tab in our products section, or fill out the bulk quote form above.</div>
+    </div>
+    <div class="faq-item" onclick="toggleFaq(this)">
+      <div class="faq-q">What payment methods do you accept? <span class="faq-toggle">+</span></div>
+      <div class="faq-a">We accept EFT payments directly to our FNB account (Account Number: 63207348376). Cash on delivery may be available for local PE orders — confirm via WhatsApp when placing your order.</div>
+    </div>
+    <div class="faq-item" onclick="toggleFaq(this)">
+      <div class="faq-q">How does the bottle return policy work? <span class="faq-toggle">+</span></div>
+      <div class="faq-a">For small volume purchases, bring back your empty bottle when you order again and save R3 off your next purchase. It's our way of encouraging reuse and reducing waste.</div>
+    </div>
+    <div class="faq-item" onclick="toggleFaq(this)">
+      <div class="faq-q">Are your products safe for home use? <span class="faq-toggle">+</span></div>
+      <div class="faq-a">All ChemBros products are manufactured for standard household and commercial use. As with all cleaning products, follow the usage instructions and keep out of reach of children. Contact us if you need specific safety information for any product.</div>
+    </div>
+    <div class="faq-item" onclick="toggleFaq(this)">
+      <div class="faq-q">How quickly will my order be ready? <span class="faq-toggle">+</span></div>
+      <div class="faq-a">Most orders are ready within 24–48 hours. Thick Bleach in 750ml is made to order — allow a little extra time. WhatsApp us to confirm availability and turnaround on specific products.</div>
+    </div>
+    <div class="faq-item" onclick="toggleFaq(this)">
+      <div class="faq-q">Can I resell ChemBros products? <span class="faq-toggle">+</span></div>
+      <div class="faq-a">Absolutely. Many spaza shops and small retailers stock our products. Request a bulk reseller quote via our WhatsApp or the bulk quote form to discuss wholesale pricing.</div>
+    </div>
+    <div class="faq-item" onclick="toggleFaq(this)">
+      <div class="faq-q">How do I place an order? <span class="faq-toggle">+</span></div>
+      <div class="faq-a">The easiest way is via WhatsApp — just tap any "Order via WhatsApp" button on the site and it'll open a pre-filled message. You can also call 067 739 1209 or use the contact form below.</div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-grid">
+    <div>
+      <div class="section-label">Get in Touch</div>
+      <h2 class="section-title">CONTACT US</h2>
+      <p class="section-sub">Place an order, request a quote, or ask us anything. We usually respond within a few hours.</p>
+
+      <div class="contact-detail">
+        <div class="contact-icon">💬</div>
+        <div>
+          <div class="contact-label">WhatsApp (Fastest)</div>
+          <div class="contact-val"><a href="https://wa.me/27677391209" target="_blank">067 739 1209</a></div>
+        </div>
+      </div>
+      <div class="contact-detail">
+        <div class="contact-icon">📞</div>
+        <div>
+          <div class="contact-label">Phone</div>
+          <div class="contact-val"><a href="tel:+27677391209">067 739 1209</a></div>
+        </div>
+      </div>
+      <div class="contact-detail">
+        <div class="contact-icon">📍</div>
+        <div>
+          <div class="contact-label">Location</div>
+          <div class="contact-val">Port Elizabeth (Gqeberha), Eastern Cape</div>
+        </div>
+      </div>
+
+      <div class="bank-box">
+        <div class="bank-box-title">🏦 Bank Details (EFT Payment)</div>
+        <div class="bank-row">
+          <span class="bank-row-label">Bank</span>
+          <span class="bank-row-val">FNB</span>
+        </div>
+        <div class="bank-row">
+          <span class="bank-row-label">Account Number</span>
+          <span class="bank-row-val">63207348376</span>
+        </div>
+        <div class="bank-row">
+          <span class="bank-row-label">Reference</span>
+          <span class="bank-row-val">Your Name + Order</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-form">
+      <h3>SEND US A MESSAGE</h3>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Your Name</label>
+          <input type="text" placeholder="Full name" id="cf-name"/>
+        </div>
+        <div class="form-group">
+          <label>Phone Number</label>
+          <input type="tel" placeholder="e.g. 067 739 1209" id="cf-phone"/>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>What can we help with?</label>
+        <select id="cf-type">
+          <option value="">Select...</option>
+          <option>Place an order</option>
+          <option>Request a bulk quote</option>
+          <option>Product information</option>
+          <option>Delivery enquiry</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Message</label>
+        <textarea placeholder="Tell us what you need..." id="cf-msg" rows="4"></textarea>
+      </div>
+      <button class="submit-btn" onclick="submitContactForm()">Send Message →</button>
+      <div class="success-msg" id="contact-success">✅ Message received! We'll be in touch shortly.</div>
+
+      <div style="margin-top:1.5rem; text-align:center; color:var(--muted); font-size:0.85rem;">
+        Or reach us directly on WhatsApp:
+        <br/>
+        <a href="https://wa.me/27677391209?text=Hi+ChemBros%2C+I%27d+like+to+enquire+about+your+products" target="_blank" class="btn-whatsapp" style="display:inline-flex;margin-top:0.8rem;font-size:0.85rem;padding:10px 20px;">
+          💬 Open WhatsApp Chat
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="#home" class="nav-logo">
+        <img src="chembros-logo.png" alt="CHEMBROS">
+      </a>
+      <p>Premium locally manufactured cleaning products based in Port Elizabeth, Eastern Cape. Serving households and businesses across Gqeberha.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Products</h4>
+      <ul>
+        <li><a href="#products" onclick="showTab('small')">Small Volume (500ml–1L)</a></li>
+        <li><a href="#products" onclick="showTab('medium')">Medium Volume (5L)</a></li>
+        <li><a href="#products" onclick="showTab('bulk')">Bulk Volume (25L)</a></li>
+        <li><a href="#bulk">Business Orders</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#about">About ChemBros</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="https://wa.me/27677391209" target="_blank">WhatsApp: 067 739 1209</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 ChemBros. Port Elizabeth, Eastern Cape, South Africa.</span>
+    <div class="return-policy">♻️ Return your bottle · Save R3</div>
+  </div>
+</footer>
+
+<!-- WHATSAPP FLOAT BUTTON -->
+<a class="wa-float" href="https://wa.me/27677391209?text=Hi+ChemBros%2C+I%27d+like+to+place+an+order" target="_blank" title="Order on WhatsApp">
+  💬
+</a>
+
+<script src="script.js" defer></script>
+</body>
+</html>
